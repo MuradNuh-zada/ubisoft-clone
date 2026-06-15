@@ -1,11 +1,12 @@
 import { USER_ROUTES } from "@/constants/const";
 import { Link } from "react-router-dom";
+import profilePhoto from "../../assets/logo/profil-photo.png";
 
 const Index: React.FC = () => {
   return (
     <>
-      <div className="bg-[#000]">
-        <header className="flex justify-between container mx-auto max-w-[1650px] text-white font-extrabold">
+      <header className="bg-[#000] sticky top-0 right-0 left-0">
+        <div className="flex justify-between container mx-auto max-w-[1650px] text-white font-extrabold">
           <nav className="flex items-center gap-5">
             <Link to={USER_ROUTES.HOME} className="flex items-center">
               <svg
@@ -49,7 +50,7 @@ const Index: React.FC = () => {
               </li>
             </ul>
           </nav>
-          <div className="flex items-center">
+          <div className="flex items-center gap-14 mr-6">
             <a className="flex gap-2 items-center" href="#">
               Download Ubisoft Connect
               <svg
@@ -67,7 +68,7 @@ const Index: React.FC = () => {
                 ></path>
               </svg>
             </a>
-            <button className="flex justify-center items-center outline-none bg-[#363636]/60 rounded-3xl w-[28px] h-[28px]">
+            <button className=" cursor-pointer flex justify-center items-center outline-none bg-[#363636]/60 rounded-3xl w-[28px] h-[28px]">
               <span className=" w-[20px] h-[20px] ">
                 <svg
                   className="block w-full h-full"
@@ -86,14 +87,14 @@ const Index: React.FC = () => {
                 </svg>
               </span>
             </button>
+            <button className="cursor-pointer flex justify-center items-center bg-[#edeef0] w-[30px]">
+              <img src={profilePhoto} alt="" />
+            </button>
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
     </>
   );
 };
 
 export default Index;
-
-
-
