@@ -1,10 +1,14 @@
-const name: string = "Ubisoft  SAaALAam";
-
+import HomeCartSlider from "@/components/HomeCartSlider";
 const Index: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-white flex items-center justify-center">
-      <h1 className="text-5xl text-black font-bold">{name}</h1>
-    </div>
+    <main
+      
+    >
+      <div className="container xl:px-[72px] max-w-[1776px] mx-auto px-4">
+        <HomeCartSlider />
+        <HomeCartSlider />
+      </div>
+    </main>
   );
 };
 // interface Game {

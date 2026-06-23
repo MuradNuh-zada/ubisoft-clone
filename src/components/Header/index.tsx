@@ -5,7 +5,7 @@ import profilePhoto from "../../assets/logo/profil-photo.png";
 const Index: React.FC = () => {
   return (
     <>
-      <header className="bg-[#000] sticky top-0 right-0 left-0">
+      <header className="bg-[#000] sticky top-0 right-0 left-0 z-50">
         <div className="flex justify-between container mx-auto max-w-[1650px] text-white font-extrabold">
           <nav className="flex items-center gap-5">
             <Link to={USER_ROUTES.HOME} className="flex items-center">
