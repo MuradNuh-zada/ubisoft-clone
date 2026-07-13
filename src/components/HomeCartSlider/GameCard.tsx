@@ -59,7 +59,6 @@ const GameCard: React.FC = () => {
               alt={game.title}
               className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
             />
-
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
           </div>
 

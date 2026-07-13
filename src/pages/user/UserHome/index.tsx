@@ -1,12 +1,14 @@
 import HomeCartSlider from "@/components/HomeCartSlider";
+import Universes from "@/components/Universes";
+import Free from "@/components/Free";
 const Index: React.FC = () => {
   return (
-    <main
-      
-    >
+    <main>
       <div className="container xl:px-[72px] max-w-[1776px] mx-auto px-4">
         <HomeCartSlider />
         <HomeCartSlider />
+        <Universes />
+        <Free />
       </div>
     </main>
   );
