@@ -1,6 +1,7 @@
 import HomeCartSlider from "@/components/HomeCartSlider";
 import Universes from "@/components/Universes";
 import Free from "@/components/Free";
+import News from "@/components/News";
 const Index: React.FC = () => {
   return (
     <main>
@@ -9,6 +10,7 @@ const Index: React.FC = () => {
         <HomeCartSlider />
         <Universes />
         <Free />
+        <News />
       </div>
     </main>
   );
