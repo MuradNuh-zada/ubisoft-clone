@@ -2,6 +2,7 @@ import HomeCartSlider from "@/components/HomeCartSlider";
 import Universes from "@/components/Universes";
 import Free from "@/components/Free";
 import News from "@/components/News";
+import UbisoftConnect from "@/components/UbisoftConnect";
 const Index: React.FC = () => {
   return (
     <main>
@@ -11,6 +12,7 @@ const Index: React.FC = () => {
         <Universes />
         <Free />
         <News />
+        <UbisoftConnect />
       </div>
     </main>
   );
