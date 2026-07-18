@@ -1,4 +1,4 @@
-import type { Games } from "@/types/games";
+import type { Games } from "@/types/game";
 
 type GameCardProps = {
   games: Games;

@@ -1,4 +1,4 @@
-import { USER_ROUTES } from "@/constants/const";
+import { USER_ROUTES, ROUTES } from "@/constants/const";
 import { Link } from "react-router-dom";
 import profilePhoto from "../../assets/logo/profil-photo.png";
 
@@ -87,9 +87,40 @@ const Index: React.FC = () => {
                 </svg>
               </span>
             </button>
-            <button className="cursor-pointer flex justify-center items-center bg-[#edeef0] w-[30px]">
+
+            <Link
+              to={USER_ROUTES.BASKET}
+              className="flex items-center gap-2 bg-[hsla(0,0%,94.9%,.15)] px-[18px] py-[6px] rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                fill="none"
+                viewBox="0.88 0.88 12.22 12.25"
+                aria-hidden="true"
+                focusable="false"
+                className="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.078 1.016a.583.583 0 0 1 .822.062l1.53 1.775c.017.02.033.042.047.064h8.741a.875.875 0 0 1 .833 1.141L11.278 9.6a.875.875 0 0 1-.833.608H3.208a.875.875 0 0 1-.875-.875V3.368L1.016 1.84a.583.583 0 0 1 .062-.823zM3.5 9.042h6.732l.84-2.625H3.5v2.625zm0-3.792V4.083h8.318l-.373 1.167H3.5z"
+                  fill="#fff"
+                ></path>
+                <path
+                  d="M4.667 11.958a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0zM9.625 13.125a1.167 1.167 0 1 0 0-2.333 1.167 1.167 0 0 0 0 2.333z"
+                  fill="#fff"
+                ></path>
+              </svg>
+              Cart <span>(1)</span>
+            </Link>
+            <Link
+              to={ROUTES.LOGIN}
+              className="cursor-pointer flex justify-center items-center bg-[#edeef0] w-[30px]"
+            >
               <img src={profilePhoto} alt="" />
-            </button>
+            </Link>
           </div>
         </div>
       </header>

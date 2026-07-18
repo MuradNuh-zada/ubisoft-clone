@@ -1,8 +1,12 @@
-
+import GamesBanner from "@/components/GamesBanner";
+import GameSection from "@/components/GameSection";
 const Index: React.FC = () => {
   return (
-    <div>USER GAMESS</div>
-  )
-}
+    <main>
+      <GamesBanner />
+      <GameSection/>
+    </main>
+  );
+};
 
-export default Index
+export default Index;

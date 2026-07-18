@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
-import type { Games } from "@/types/games";
+import type { Games } from "@/types/game";
 import "swiper/css";
 import "./homecartslider.css";
 import GameCard from "./GameCard";
@@ -87,7 +87,7 @@ const Index: React.FC = () => {
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className={`w-12 h-12 flex items-center justify-center rounded-full transition
-                ${isBeginning ? "opacity-30 cursor-not-allowed" : "opacity-100 hover:bg-white/10"}
+                ${isBeginning ? "opacity-30 cursor-not-allowed" : "opacity-100 cursor-pointer  hover:bg-white/10"}
               `}
             >
               <svg
@@ -109,7 +109,7 @@ const Index: React.FC = () => {
             <button
               onClick={() => swiperRef.current?.slideNext()}
               className={`w-12 h-12 flex items-center justify-center rounded-full transition
-                  ${isEnd ? "opacity-30 cursor-not-allowed" : "opacity-100 hover:bg-white/10"}
+                  ${isEnd ? "opacity-30 cursor-not-allowed" : "opacity-100 hov cursor-pointer hover:bg-white/10"}
                 `}
             >
               <svg
