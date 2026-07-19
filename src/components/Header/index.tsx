@@ -31,7 +31,7 @@ const Index: React.FC = () => {
                 </Link>
               </li>
 
-              <li className="h-full ">
+              {/* <li className="h-full ">
                 <Link className="flex items-center h-full px-8 hover:bg-white hover:text-black transition">
                   help
                 </Link>
@@ -47,7 +47,7 @@ const Index: React.FC = () => {
                 <Link className="flex items-center h-full px-8 hover:bg-white hover:text-black transition">
                   ubisoft+
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="flex items-center gap-14 mr-6">

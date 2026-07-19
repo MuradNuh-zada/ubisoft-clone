@@ -2,68 +2,17 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
-import type { Games } from "@/types/game";
+import  { sliderGames } from "@/data/slidergames";
 import "swiper/css";
 import "./homecartslider.css";
 import GameCard from "./GameCard";
-
-const games: Games[] = [
-  {
-    title: "Assassin's Creed Shadows",
-    edition: "Standard Edition",
-    price: "€69.99",
-    image: "https://images.unsplash.com/photo-1608889175638-9b1b8b5f6c6a?w=800",
-  },
-  {
-    title: "Anno 117: Pax Romana",
-    edition: "Standard Edition",
-    price: "€59.99",
-    image: "https://images.unsplash.com/photo-1520697222865-7b3f1b8a2a2f?w=800",
-  },
-  {
-    title: "Star Wars Outlaws",
-    edition: "Standard Edition",
-    price: "€69.99",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800",
-  },
-  {
-    title: "Assassin's Creed Mirage",
-    edition: "Standard Edition",
-    price: "€49.99",
-    image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800",
-  },
-  {
-    title: "Ghost Recon Breakpoint",
-    edition: "Standard Edition",
-    price: "€59.99",
-    image: "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=800",
-  },
-  {
-    title: "Anno 1800",
-    edition: "Standard Edition",
-    price: "€59.99",
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800",
-  },
-  {
-    title: "Anno 1800",
-    edition: "Standard Edition",
-    price: "€59.99",
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800",
-  },
-  {
-    title: "Anno 1800",
-    edition: "Standard Edition",
-    price: "€59.99",
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800",
-  },
-];
 
 const Index: React.FC = () => {
   const swiperRef = useRef<SwiperType | null>(null);
   const [activePage, setActivePage] = useState(0);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
-  const totalPages = Math.ceil(games.length / 6);
+  const totalPages = Math.ceil(sliderGames.length / 6);
   return (
     <section className="my-[64px]">
       <div className="flex justify-between items-center py-[24px]">
@@ -147,9 +96,9 @@ const Index: React.FC = () => {
           setIsEnd(swiper.isEnd);
         }}
       >
-        {games.map((games, i) => (
+        {sliderGames.map((sliderGames, i) => (
           <SwiperSlide key={i}>
-            <GameCard games={games} />
+            <GameCard games={sliderGames} />
           </SwiperSlide>
         ))}
       </Swiper>
